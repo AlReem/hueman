@@ -1578,3 +1578,31 @@ text-align: center!important;
   text-decoration: none;
 text-align: center;
 }
+
+.cta-section {
+	background: linear-gradient(to right, rgb(72,33,94) 0%,rgb(145,66,188) 50%,rgb(72,33,94) 100%);
+	text-align: center;
+	color: white;
+	border-radius: 5px;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.cta-title {
+	color: white;
+	font-weight: bold;
+}
+
+.cta-button {
+	background-color: black;
+	background-image: linear-gradient(to bottom,#fff 0,#e0e0e0 100%);
+	color: black;
+	padding: 5px;
+	font-weight: bold;
+	margin-top: 10px;
+	border-radius: 4px;
+}
+
+.cta-body {
+	margin-bottom: 20px;
+}

@@ -33,6 +33,23 @@
 		<div class="clear"></div>
 		
 		<?php the_tags('<p class="post-tags"><span>'.__('Tags:','hueman').'</span> ','','</p>'); ?>
+
+		<?php 
+			$call_to_action_title = get_post_meta( get_the_ID(), 'call_to_action_title', true );
+			$call_to_action_body = get_post_meta( get_the_ID(), 'call_to_action_body', true );
+			$call_to_action_button_title = get_post_meta( get_the_ID(), 'call_to_action_button_title', true );
+			$call_to_action_button_target = get_post_meta( get_the_ID(), 'call_to_action_button_target', true );
+			// check if the custom field has a value
+			if( ! empty( $call_to_action_title ) ) { ?>
+			  <section class="cta-section">
+			  	<h1 class="post-title cta-title"><?php echo $call_to_action_title; ?></h1>
+				  	<div class="entry-inner cta-body">
+					  	<p><?php echo $call_to_action_body; ?></p>
+				  	</div>
+				  	<a class="submit cta-button" href="<?php echo $call_to_action_button_target; ?>"><?php echo $call_to_action_button_title; ?></a>
+			  </section>
+			<?php } ?>
+			
 		
 		<?php if ( ( ot_get_option( 'author-bio' ) != 'off' ) && get_the_author_meta( 'description' ) ): ?>
 			<div class="author-bio">
