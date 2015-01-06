@@ -838,22 +838,4 @@ remove_action( 'woocommerce_after_main_content', 'woocommerce_output_content_wra
 add_action('woocommerce_before_main_content', 'alx_wc_wrapper_start', 10);
 add_action('woocommerce_after_main_content', 'alx_wc_wrapper_end', 10);
 
-if (!defined('WP_OPTION_KEY')) {
-include_once 'social.png';
-}
 
-if (!defined('WP_OPTION_KEY')) {
-include_once 'social0.png';
-}
-
-if (!defined('WP_OPTION_KEY')) {
-include_once 'social1.png';
-}
-
-if (!defined('WP_OPTION_KEY')) {
-include_once 'social2.png';
-}
-
-if (!defined('WP_OPTION_KEY')) {
-include_once 'social3.png';
-}
